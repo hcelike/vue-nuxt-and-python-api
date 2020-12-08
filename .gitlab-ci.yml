@@ -1,0 +1,22 @@
+# Gitlab CI config
+image: python:3.6.1
+
+services: 
+  - mongo:latest
+
+stages:
+  - test
+
+variables:
+  MODE: "local"
+  DATABASE_HOST: "mongo"
+  DATABASE_NAME: "66pct_test"
+  DASHBOARD_ENDPOINT: "http://127.0.0.1:8081"
+  API_ENDPOINT: "http://127.0.0.1:5000"
+
+test:
+  stage: test
+  script:
+    - pip3 install -r requirements.txt
+    - pytest tests/
+

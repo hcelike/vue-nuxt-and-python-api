@@ -1,0 +1,39 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "Frontend",
+  "author": "fsnlarson",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt --dotenv ../.env",
+    "build": "nuxt build --dotenv ../.env",
+    "start": "nuxt start --dotenv ../.env",
+    "generate": "nuxt generate --dotenv ../.env",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@nuxtjs/auth": "^4.9.1",
+    "@nuxtjs/axios": "^5.11.0",
+    "@nuxtjs/device": "^1.2.7",
+    "@nuxtjs/moment": "^1.6.1",
+    "@nuxtjs/pwa": "^3.0.0-0",
+    "@nuxtjs/toast": "^3.3.0",
+    "lodash": "^4.17.15",
+    "nuxt": "^2.12.2",
+    "nuxt-socket-io": "^1.1.10"
+  },
+  "devDependencies": {
+    "@mdi/font": "^5.3.45",
+    "@mdi/js": "^5.3.45",
+    "@nuxt/typescript-build": "^0.6.0",
+    "@nuxtjs/vuetify": "^1.0.0",
+    "@vue/test-utils": "^1.0.0-beta.27",
+    "babel-jest": "^24.1.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "jest": "^24.1.0",
+    "prettier": "^1.19.1",
+    "ts-jest": "^25.0.0",
+    "vue-jest": "^4.0.0-0"
+  }
+}
